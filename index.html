@@ -7,22 +7,8 @@
 
     <title>Matthew Zhu</title>
     <link rel="stylesheet" href="styles.css">
-
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-    (function(){
-        emailjs.init({
-            publicKey: "SX88KXeIprUMAlZGe",
-        });
-    })();
-    </script>
-
-    <script src="scripts.js"></script>
-
-</head>
-<body>
+    </head>
+    <body>
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-md navbar-dark">
@@ -41,16 +27,19 @@
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link text-white">Home</a>
+                        <a href="#" class="nav-link text-white">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#projects" class="nav-link text-white">Projects</a>
+                    <li class="nav-item" id="link1">
+                        <a href="#" class="nav-link text-white">Experience</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link text-white">About</a>
+                    <li class="nav-item" id="link2">
+                        <a href="#" class="nav-link text-white">Projects</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link text-white">Contact</a>
+                    <li class="nav-item" id="link3">
+                        <a href="#" class="nav-link text-white">About</a>
+                    </li>
+                    <li class="nav-item" id="link4">
+                        <a href="#" class="nav-link text-white">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -64,7 +53,7 @@
             <h1>Hi, I'm <span class="highlight">Matt</span></h1>
             <p class="subtext" style="font-size: 20px">I'm a junior computer engineering major seeking summer 2025 internships</p>
             <div class="buttons">
-                <button class="hireMe" onclick="scrollTo()">Hire Me</button>
+                <button class="hireMe" id="hireButton">Hire Me</button>
                 <a href="./../assets/Matthew Zhu's Resume 2024.pdf" class="download" download="Matthew Zhu's Resume 2024.pdf">Download CV</a>
             </div>
 
@@ -79,9 +68,8 @@
 
 <!-- Experience Section -->
 
-    <div class="photo-title"><h2>Experience</h2></div> 
-
     <div class="exp-container">
+        <div class="photo-title"><h2>Experience</h2></div> 
 
         <div class="left-section">
             <img src = ./../assets/OTE_results.png alt = "image of OTE-GAN results" class="research-image">
@@ -116,13 +104,20 @@
     </div>
 
 
-<!-- About Me Section -->
+
+<!-- Project Section -->
+
+    <div class="project-container">
+        <div class="photo-title"><h2>Project</h2></div> 
+    </div>   
 
 
-    <div class="photo-title"><h2>About Me</h2></div> 
+
+
+<!-- About Me Section --> 
 
     <div class="about-container">
-
+        <div class="photo-title"><h2>About Me</h2></div>
         <div class="left-section">
             <img src = ./../assets/Picture.jpg alt = "Selfie of myself" class="self-image">
 
@@ -154,12 +149,7 @@
             <textarea id="message" name="message" rows="5" required></textarea>
           </div>
     
-          <div class="checkbox-container">
-            <input type="checkbox" id="schedule" name="sched-int">
-            <label for="sched-int">Schedule Interview</label>
-          </div>
-    
-          <button type="submit" class="send-button" onclick="sendMail()">Send Email</button>
+          <button type="submit" class="send-button" id="submitBtn">Send Email</button>
         </form>
       </div>
 
@@ -169,6 +159,20 @@
 
 
 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "SX88KXeIprUMAlZGe",
+        });
+    })();
+    </script>
 </body>
 </html>

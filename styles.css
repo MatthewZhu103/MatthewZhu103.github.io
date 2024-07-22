@@ -24,6 +24,14 @@ nav {
     background: var(--primary-color);
 }
 
+.navbar {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
 .navbar-nav {
     gap: 36px;
 }
