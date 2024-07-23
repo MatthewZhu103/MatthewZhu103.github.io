@@ -4,13 +4,18 @@ function sendMail(){
         subject : document.getElementById("subject").value,
         message : document.getElementById("message").value,
     }
+
+    if (!email || !subject || !message) {
+        alert("Please fill out all fields before sending the email.");
+        return; // Prevent the email from being sent
+    }
     
     emailjs.send("service_q6muw1b","template_5f8ud09", parms).then(alert("Email Sent! I'm glad you consider me as a suitable candidate and look forward to working with you in the future!"));
 
 }
 
 
-function scrollToElement(elementSelector, instance = 0, offset = 70) {
+function scrollToElement(elementSelector, instance = 0, offset = 0) {
     const elements = document.querySelectorAll(elementSelector);
 
     if (elements.length > instance) {

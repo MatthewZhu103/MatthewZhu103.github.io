@@ -39,7 +39,7 @@
                         <a href="#" class="nav-link text-white">About</a>
                     </li>
                     <li class="nav-item" id="link4">
-                        <a href="#" class="nav-link text-white">Contact</a>
+                        <a href="#" class="nav-link text-white contactBtn">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -76,7 +76,7 @@
 
             <div class="text-format">
                 <h3 class="proj-title">Machine Learning-Based Retinal Image Enhancement with OTE-GAN</h3>
-                <p class="paragraph">During the summer, I worked with Dr. Wang in researching methods to better enhance retinal images from current models with a GAN (Generative Adversarial Networks) based image-to-image translation to better preserve artifacts and improve image quality. I helped to refactor some of the code to work with EyeQ (an image quality classifier) to train the model and assess the accuracy given test images. </p>
+                <p class="paragraph">During the summer, I worked with Dr. Wang in researching methods to better enhance retinal images from current models with a GAN (Generative Adversarial Networks) based image-to-image translation to better preserve artifacts and improve image quality. I helped to refactor some of the code to work with EyeQ (an image quality classifier) to read data from a csv file</p>
             </div>
         </div>
 
@@ -108,7 +108,35 @@
 <!-- Project Section -->
 
     <div class="project-container">
-        <div class="photo-title"><h2>Project</h2></div> 
+        <div class="photo-title"><h2>Projects</h2></div> 
+            
+        <div class="flex-grid-thirds">
+            <div class="col">
+                <img src = ./../assets/placeholder.png alt = "Image of me (blue shirt) and fellow Sun Devil Robotics Club leaders and members" class="research-image">
+                <h5 class="proj-title">DHT11 & LCD Raw Drivers</h5>
+                <p class="text-format">As a learning experience, I developed a DHT11 and LCD driver on an ARM Cortex STM32 without using any existing libraries. I had to utilize a logic analyzer, the DHT datasheet, and the LCDs datasheet to decode the communication protocols and for debugging of firmware issues to display the temperature on the LCD</p>
+            </div>
+            <div class="col">
+                <img src = ./../assets/placeholder.png alt = "Image of me (blue shirt) and fellow Sun Devil Robotics Club leaders and members" class="research-image">
+                <h5 class="proj-title">Automatic Dog Feeder</h5>
+                <p class="text-format">I forget to feed my dog sometimes from the amount of homework and studying I have. I designed a dog feeder based on an Arduino Uno by writing drivers and making a PCB using KiCAD for the components. The dog feeder features an LCD with a menu and also is remote controllable.</p>
+            </div>
+        </div>
+
+        <div class="flex-grid-thirds">
+            <div class="col">
+                <h4 class="proj-title">IN PROGRESS</h4>
+                <img src = ./../assets/placeholder.png alt = "Image of me (blue shirt) and fellow Sun Devil Robotics Club leaders and members" class="research-image">
+                <h5 class="proj-title">Object Classifier with OpenCV</h5>
+                <p class="text-format">Using OpenCV, a Raspberry Pi, and a RaspPi camera, I want to make a basic object classifier that can recognize objects shown in front of the camera. This project will improve my skills in using OpenCV, scikit-learn, and TensorFlow libraries as well as learning how to obtain and train models on quality, diverse image data</p>
+            </div>
+            <div class="col">
+                <h4 class="proj-title">UPCOMING</h4>
+                <img src = ./../assets/placeholder.png alt = "Image of me (blue shirt) and fellow Sun Devil Robotics Club leaders and members" class="research-image">
+                <h5 class="proj-title">Clap-on Lights w/Clap Recognition</h5>
+                <p class="text-format">Implementing an Arduino-powered LED system that responds only to claps can be challenging due to interference from other loud noises like fireworks (college students doing college student things), the house settling, and random bangs from me or my neighbors. To solve this, I plan to use an audio classifier to accurately recognize claps and ignore other sounds, ensuring the lights turn on only when I clap</p>
+            </div>
+        </div>
     </div>   
 
 
@@ -130,23 +158,23 @@
 
 
 
-    <div class="photo-title"><h2>Contact Me</h2></div>
+    <div class="contact-title"><h2>Contact Me</h2></div>
+    <h5 class="hook">Interested in Working Together? Let's Chat!</h5>
 
     <div class="contact-container" id="contactInformation">
+
+        <img src = ./../assets/placeholder.png alt = "Selfie of myself" class="form-image">
         <form id="emailForm">
           <div class="email-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="Your Email*" required>
           </div>
 
           <div class="subject">
-            <label for="subject">Subject:</label>
-            <input id="subject" name="subject" required>
+            <input id="subject" name="subject" placeholder="Subject*" required>
           </div>
     
           <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <textarea id="message" name="message" rows="5" placeholder="Message*" required></textarea>
           </div>
     
           <button type="submit" class="send-button" id="submitBtn">Send Email</button>
@@ -154,7 +182,7 @@
       </div>
 
     <div class="foot-container">
-        <p class="footer">Matthew's Website 2024</p>
+        <p class="footer">Matthew Zhu Copyright &copy 2024</p>
     </div>
 
 
