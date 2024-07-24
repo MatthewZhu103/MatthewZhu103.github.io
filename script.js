@@ -29,6 +29,20 @@ function scrollToElement(elementSelector, instance = 0) {
     }
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    const heroText = document.querySelector('.hero-text');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          heroText.classList.add('visible');
+          observer.unobserve(entry.target); 
+        }
+      });
+    });
+
+    observer.observe(heroText);
+  });
 
 document.getElementById("hireButton").addEventListener("click", function(event) {
     event.preventDefault();

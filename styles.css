@@ -7,6 +7,10 @@
 
 body, html {
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
   }
 
 :root{
@@ -79,14 +83,29 @@ nav a:hover{
     background: var(--primary-color);
     padding: 0px;
     gap: 50px;
+
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .hero-text{
     max-width:550px;
     width: 100%;
     word-wrap: break-word;
+
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
+.hero-text.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
 .hero-text h1 {
     font-size: 56px;
     color: var(--text-color);
