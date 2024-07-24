@@ -106,7 +106,7 @@ nav a:hover{
   }
   
 .hero-text h1 {
-    font-size: 56px;
+    font-size: 72px;
     color: var(--text-color);
     font-weight: bolder;
     padding-bottom: 12px;
@@ -232,9 +232,9 @@ nav a:hover{
     width: 100%;
     box-sizing: border-box; /* Ensure padding is included in the width calculation */
     flex: 1;
-    min-width: 900px;
-
+    min-width: 200px;
 }
+
 
 .text-format{
     max-width:550px;
@@ -268,6 +268,10 @@ nav a:hover{
     height: auto;
 }
 
+img{
+    border-radius: 8px;
+}
+
 /*Project Section*/
 
 .project-container {
@@ -279,11 +283,15 @@ nav a:hover{
     box-sizing: border-box;
 }
 
+.proj-title{
+    padding-top: 15px;
+}
 .flex-grid-thirds {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    max-width: 1000px; /* Adjust as needed */
+    max-width: 1200px; /* Adjust as needed */
     margin-bottom: 1rem;
     gap: 2rem;
 }
@@ -323,7 +331,15 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     padding-bottom: 80px;
+    flex-direction: row;
   }
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+}
+
 
 .contact-title h2{
     text-align: center;
@@ -423,4 +439,77 @@ form {
     margin: 0px;
     text-align: center;
     padding: 1rem;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .hero-text {
+      max-width: 90%;
+      text-align: center;
+      position: absolute;
+      top: 25%;
+      left: 0%;
+      transform: translate(-50%, -50%);
+    }
+
+    .buttons{
+        justify-content: center;
+    }
+
+
+
+
+
+
+    .right-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+  
+      .left-section {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+        }
+      
+      .left-section img{
+          width: 80%;
+      }
+
+
+      .flex-grid-thirds{
+        flex-direction: column;
+      }
+  
+      .col{
+          max-width: 100%;
+      }
+
+      .contact-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 80px;
+        flex-direction: column;
+    }
+
+    .icons{
+        justify-content: center;
+        align-items: center;
+    }
 }

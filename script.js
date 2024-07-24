@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.getElementById("hireButton").addEventListener("click", function(event) {
     event.preventDefault();
-    scrollToElement('.contact-container');
+    scrollToElement('.contact-title');
 });
 
 document.getElementById("link").addEventListener("click", function(event) {
