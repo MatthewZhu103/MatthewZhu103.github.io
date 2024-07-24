@@ -71,7 +71,7 @@ document.getElementById("link3").addEventListener("click", function(event) {
 
 document.getElementById("link4").addEventListener("click", function(event) {
     event.preventDefault();
-    scrollToElement('.contact-container');
+    scrollToElement('.contact-title');
 });
 
 document.getElementById("emailForm").addEventListener("submit", (event) => {
