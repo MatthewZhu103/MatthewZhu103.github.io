@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Matthew Zhu</title>
+    <title>Matthew Zhu | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
     </head>
     <body>
 
@@ -17,7 +19,6 @@
                 <span class="fw-bolder text-white logo-font">Matthew Zhu</span>
             </a>
 
-
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#main-nav" aria-controls="main-dev" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -27,42 +28,57 @@
             <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-white">Home</a>
+                        <a href="home" id="link" class="nav-link text-white">Home</a>
                     </li>
                     <li class="nav-item" id="link1">
-                        <a href="#" class="nav-link text-white">Experience</a>
+                        <a href="experience" class="nav-link text-white">Experience</a>
                     </li>
                     <li class="nav-item" id="link2">
-                        <a href="#" class="nav-link text-white">Projects</a>
+                        <a href="projects" class="nav-link text-white">Projects</a>
                     </li>
                     <li class="nav-item" id="link3">
-                        <a href="#" class="nav-link text-white">About</a>
+                        <a href="about" class="nav-link text-white">About</a>
                     </li>
                     <li class="nav-item" id="link4">
-                        <a href="#" class="nav-link text-white contactBtn">Contact</a>
+                        <a href="contact" class="nav-link text-white contactBtn">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+
+
+
     <!--  Hero Section  -->
 
     <div class="hero">
         <div class="hero-text">
             <h1>Hi, I'm <span class="highlight">Matt</span></h1>
-            <p class="subtext" style="font-size: 20px">I'm a junior computer engineering major seeking summer 2025 internships</p>
+            <p class="subtext" style="font-size: 25px;">Junior computer engineering major seeking summer 2025 internships</p>
             <div class="buttons">
                 <button class="hireMe" id="hireButton">Hire Me</button>
-                <a href="./../assets/Matthew Zhu's Resume 2024.pdf" class="download" download="Matthew Zhu's Resume 2024.pdf">Download CV</a>
+                <a href="./../assets/Matthew Zhu's Resume 2024.pdf" class="download" download="Matthew Zhu's Resume 2024.pdf">Download CV <i class="ri-download-line"></i></a>
+            </div>
+
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/matthewzhu103/" target="_blank" class="icon-button">
+                    <i class="ri-linkedin-box-fill"></i>
+                </a>
+                <a href="https://github.com/MatthewZhu103" target="_blank" class="icon-button">
+                    <i class="ri-github-fill"></i>
+                </a>
             </div>
 
         </div>
         <div class="hero-image">
-            <img src="./../assets/some_dood.png" alt = "A random image" class="the-image">
+            <img src="./../assets/heroImage.png" alt = "A random image" class="the-image">
             </div>
         </div>
     </div>
+
+
+
 
 
 
@@ -71,33 +87,38 @@
     <div class="exp-container">
         <div class="photo-title"><h2>Experience</h2></div> 
 
-        <div class="left-section">
-            <img src = ./../assets/OTE_results.png alt = "image of OTE-GAN results" class="research-image">
+        <div class="project">
+            <div class="left-section">
+                <img src = ./../assets/OTE_results.png alt = "image of OTE-GAN results" class="research-image">
 
-            <div class="text-format">
-                <h3 class="proj-title">Machine Learning-Based Retinal Image Enhancement with OTE-GAN</h3>
-                <p class="paragraph">During the summer, I worked with Dr. Wang in researching methods to better enhance retinal images from current models with a GAN (Generative Adversarial Networks) based image-to-image translation to better preserve artifacts and improve image quality. I helped to refactor some of the code to work with EyeQ (an image quality classifier) to read data from a csv file</p>
+                <div class="text-format">
+                    <h3 class="proj-title">Machine Learning-Based Retinal Image Enhancement with OTE-GAN</h3>
+                    <p class="paragraph">During the summer, I worked with Dr. Wang in researching methods to better enhance retinal images from current models with GAN (Generative Adversarial Networks) based image-to-image translation to better preserve artifacts and improve image quality. I helped to refactor some of the code to work with EyeQ (an image quality classifier) to read data from a csv file</p>
+                </div>
             </div>
         </div>
-
-        <div class="right-section">
         
-            <div class="text-format">
-                <h3 class="proj-title">DORA CubeSat</h3>
-                <p class="paragraph">While working as an electrical volunteer for the Interplanetary Lab Initiative, I assessed an electronic power system's performance by conducting battery capacity tests to identify discharge rate issues and fix faulty over and undervoltage protections. Additionally, I collaborated with a mentor to integrate CubeSat systems to provide critical flight data and satellite functionality to ground station equipment. My role involved meticulous documentation, progress updates, and writing testing procedures, ensuring clear communication and effective data transfer. 
-                </p>
-            </div>
+        <div class="project">
+            <div class="right-section">
+            
+                <div class="text-format">
+                    <h3 class="proj-title">DORA CubeSat</h3>
+                    <p class="paragraph">While working as an electrical volunteer for the Interplanetary Lab Initiative, I assessed an electronic power system's performance by conducting battery capacity tests to identify discharge rate issues and fix faulty over and undervoltage protections. Additionally, I collaborated with a mentor to integrate CubeSat systems to provide critical flight data and satellite functionality to ground station equipment. My role involved meticulous documentation, progress updates, and writing testing procedures, ensuring clear communication and effective data transfer. 
+                    </p>
+                </div>
 
-            <img src = ./../assets/DORA.png alt = "image of the DORA satellite" class="dora-image">
+                <img src = ./../assets/DORA.png alt = "image of the DORA satellite" class="dora-image">
+            </div>
         </div>
 
+        <div class="project">
+            <div class="left-section">
+                <img src = ./../assets/SDRC_Image.jpg alt = "Image of me (blue shirt) and fellow Sun Devil Robotics Club leaders and members" class="research-image">
 
-        <div class="left-section">
-            <img src = ./../assets/SDRC_Image.jpg alt = "Image of me (blue shirt) and fellow Sun Devil Robotics Club leaders and members" class="research-image">
-
-            <div class="text-format">
-                <h3 class="proj-title">Sun Devil Robotics Club - Mars Rover</h3>
-                <p class="paragraph">To help the SDRC compete in the University Rover Challenge, I helped make the firmware for the motors to control the rover based on the ODrive motor’s data sheet using a power supply and the provided software on Ubuntu as well as soldering connections between the motors and the motor drivers </p>
+                <div class="text-format">
+                    <h3 class="proj-title">Sun Devil Robotics Club - Mars Rover</h3>
+                    <p class="paragraph">To help the SDRC compete in the University Rover Challenge, I helped make the firmware for the motors to control the rover based on the ODrive motor’s data sheet using a power supply and the provided software on Ubuntu as well as soldering connections between the motors and the motor drivers </p>
+                </div>
             </div>
         </div>
 
@@ -105,39 +126,46 @@
 
 
 
+
+
+
+
 <!-- Project Section -->
 
     <div class="project-container">
-        <div class="photo-title"><h2>Projects</h2></div> 
+        <div class="photo-title project-section"><h2>Projects</h2></div> 
             
         <div class="flex-grid-thirds">
             <div class="col">
-                <img src = ./../assets/placeholder.png alt = "Image of me (blue shirt) and fellow Sun Devil Robotics Club leaders and members" class="research-image">
-                <h5 class="proj-title">DHT11 & LCD Raw Drivers</h5>
-                <p class="text-format">As a learning experience, I developed a DHT11 and LCD driver on an ARM Cortex STM32 without using any existing libraries. I had to utilize a logic analyzer, the DHT datasheet, and the LCDs datasheet to decode the communication protocols and for debugging of firmware issues to display the temperature on the LCD</p>
-            </div>
-            <div class="col">
-                <img src = ./../assets/placeholder.png alt = "Image of me (blue shirt) and fellow Sun Devil Robotics Club leaders and members" class="research-image">
-                <h5 class="proj-title">Automatic Dog Feeder</h5>
-                <p class="text-format">I forget to feed my dog sometimes from the amount of homework and studying I have. I designed a dog feeder based on an Arduino Uno by writing drivers and making a PCB using KiCAD for the components. The dog feeder features an LCD with a menu and also is remote controllable.</p>
-            </div>
-        </div>
-
-        <div class="flex-grid-thirds">
-            <div class="col">
                 <h4 class="proj-title">IN PROGRESS</h4>
-                <img src = ./../assets/placeholder.png alt = "Image of me (blue shirt) and fellow Sun Devil Robotics Club leaders and members" class="research-image">
+                <img src = ./../assets/opencv_image.jpg alt = "Image of me (blue shirt) and fellow Sun Devil Robotics Club leaders and members" class="research-image">
                 <h5 class="proj-title">Object Classifier with OpenCV</h5>
                 <p class="text-format">Using OpenCV, a Raspberry Pi, and a RaspPi camera, I want to make a basic object classifier that can recognize objects shown in front of the camera. This project will improve my skills in using OpenCV, scikit-learn, and TensorFlow libraries as well as learning how to obtain and train models on quality, diverse image data</p>
             </div>
             <div class="col">
                 <h4 class="proj-title">UPCOMING</h4>
-                <img src = ./../assets/placeholder.png alt = "Image of me (blue shirt) and fellow Sun Devil Robotics Club leaders and members" class="research-image">
+                <img src = ./../assets/clap_concept.png alt = "Image of me (blue shirt) and fellow Sun Devil Robotics Club leaders and members" class="research-image">
                 <h5 class="proj-title">Clap-on Lights w/Clap Recognition</h5>
                 <p class="text-format">Implementing an Arduino-powered LED system that responds only to claps can be challenging due to interference from other loud noises like fireworks (college students doing college student things), the house settling, and random bangs from me or my neighbors. To solve this, I plan to use an audio classifier to accurately recognize claps and ignore other sounds, ensuring the lights turn on only when I clap</p>
             </div>
         </div>
+
+        <div class="flex-grid-thirds">
+            <div class="col">
+                <img src = ./../assets/DHT11_project.jpg alt = "Image of me (blue shirt) and fellow Sun Devil Robotics Club leaders and members" class="research-image">
+                <h5 class="proj-title">DHT11 & LCD Raw Drivers</h5>
+                <p class="text-format">As a learning experience, I developed a DHT11 and LCD driver on an ARM Cortex STM32 without using any existing libraries. I had to utilize a logic analyzer, the DHT datasheet, and the LCDs datasheet to decode the communication protocols and for debugging of firmware issues to display the temperature on the LCD</p>
+            </div>
+            <div class="col">
+                <img src = ./../assets/PCB_Image.png alt = "Image of me (blue shirt) and fellow Sun Devil Robotics Club leaders and members" class="proj-image">
+                <h5 class="proj-title">Automatic Dog Feeder</h5>
+                <p class="text-format">I forget to feed my dog sometimes from the amount of homework and studying I have. I designed a dog feeder based on an Arduino Uno by writing drivers and making a PCB using KiCAD for the components. The dog feeder features an LCD with a menu and also is remote controllable.</p>
+            </div>
+        </div>
     </div>   
+
+
+
 
 
 
@@ -147,43 +175,62 @@
     <div class="about-container">
         <div class="photo-title"><h2>About Me</h2></div>
         <div class="left-section">
-            <img src = ./../assets/Picture.jpg alt = "Selfie of myself" class="self-image">
+            <img src = ./../assets/aboutme.jpg alt = "Selfie of myself" class="self-image">
 
             <div class="text-format">
-                <p class="paragraph">I’m Matt, a junior majoring in computer systems engineering at Arizona State University and have made the Dean’s list for every semester with a 4.0 GPA. I particularly enjoy working with embedded systems hardware and machine learning projects. Outside of academia, I enjoy walking my dog, playing Rainbow Six Siege, pen-spinning, and eating anything I’m not supposed to on diet. </p>
+                <p class="paragraph">I’m Matt, a junior majoring in computer systems engineering at Arizona State University, and have made the Dean’s list for every semester with a 4.0 GPA. I particularly enjoy working with embedded systems hardware and machine learning projects. Outside of academia, I enjoy walking my dog, playing Rainbow Six Siege, pen-spinning, and eating anything I’m not supposed to on diet. </p>
             </div>
         </div>
 
     </div>
 
-
+ 
 
     <div class="contact-title"><h2>Contact Me</h2></div>
-    <h5 class="hook">Interested in Working Together? Let's Chat!</h5>
 
     <div class="contact-container" id="contactInformation">
 
-        <img src = ./../assets/placeholder.png alt = "Selfie of myself" class="form-image">
-        <form id="emailForm">
-          <div class="email-group">
-            <input type="email" id="email" name="email" placeholder="Your Email*" required>
-          </div>
+        <iframe src="https://embed.styledcalendar.com/#7RMyy3e8d06IvQUbQMIk" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
+        <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
 
-          <div class="subject">
-            <input id="subject" name="subject" placeholder="Subject*" required>
-          </div>
-    
-          <div class="form-group">
-            <textarea id="message" name="message" rows="5" placeholder="Message*" required></textarea>
-          </div>
-    
-          <button type="submit" class="send-button" id="submitBtn">Send Email</button>
+        <form id="emailForm">
+            <h5 class="hook">Interested in Working Together? Let's Chat!</h5>
+            <p class="form-subtext">Schedule a meet when I'm not busy</p>
+
+            <div class="email-group">
+                <input type="email" id="email" name="email" placeholder="Your Email*" required>
+            </div>
+
+            <div class="subject">
+                <input id="subject" name="subject" placeholder="Subject*" required>
+            </div>
+        
+            <div class="form-group">
+                <textarea id="message" name="message" rows="5" placeholder="Message/Meet Link & Time*" required></textarea>
+            </div>
+        
+            <button type="submit" class="send-button" id="submitBtn">Send Email</button>
+            
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/matthewzhu103/" target="_blank" class="icon-button">
+                    <i class="ri-linkedin-box-fill"></i>
+                </a>
+                <a href="https://github.com/MatthewZhu103" target="_blank" class="icon-button">
+                    <i class="ri-github-fill form"></i>
+                </a>
+            </div>
+
         </form>
-      </div>
+    </div>
 
     <div class="foot-container">
         <p class="footer">Matthew Zhu Copyright &copy 2024</p>
     </div>
+
+
+
+
+
 
 
 

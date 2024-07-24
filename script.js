@@ -15,12 +15,12 @@ function sendMail(){
 }
 
 
-function scrollToElement(elementSelector, instance = 0, offset = 0) {
+function scrollToElement(elementSelector, instance = 0) {
     const elements = document.querySelectorAll(elementSelector);
 
     if (elements.length > instance) {
         const element = elements[instance];
-        const elementPosition = element.getBoundingClientRect().top + window.scrollY - offset;
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
 
         window.scrollTo({
             top: elementPosition,
@@ -33,6 +33,11 @@ function scrollToElement(elementSelector, instance = 0, offset = 0) {
 document.getElementById("hireButton").addEventListener("click", function(event) {
     event.preventDefault();
     scrollToElement('.contact-container');
+});
+
+document.getElementById("link").addEventListener("click", function(event) {
+    event.preventDefault();
+    scrollToElement('.navbar-nav');
 });
 
 document.getElementById("link1").addEventListener("click", function(event) {
@@ -55,7 +60,9 @@ document.getElementById("link4").addEventListener("click", function(event) {
     scrollToElement('.contact-container');
 });
 
-document.getElementById("submitBtn").addEventListener("click", function(event) {
+document.getElementById("emailForm").addEventListener("submit", (event) => {
     event.preventDefault();
     sendMail();
+
+    document.getElementById("emailForm").reset();
 });
