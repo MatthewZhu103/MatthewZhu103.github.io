@@ -214,6 +214,10 @@ nav a:hover{
     background: #f0f0f0;
 }
 
+.exp-container img{
+    border: 1px solid black;
+}
+
 .photo-title h2{
     text-align: center;
     padding: 48px;
