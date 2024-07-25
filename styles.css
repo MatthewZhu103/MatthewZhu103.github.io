@@ -54,7 +54,7 @@ nav {
   }
 
 .the-image{
-    width: 28rem;
+    max-width: 30rem;
     height: auto;
 }
 
@@ -180,33 +180,6 @@ nav a:hover{
     display:flex;
     gap: 1rem;
 }
-
-.download {
-    padding: 10px 20px;
-    border: none;
-    background: var(--third-color);
-    color: var(--secondary-color);
-    font-weight: bold;
-    font-size: 24px;
-    border-radius: 5px;
-    transition: background-color 0.4s ease;
-    text-decoration: none;
-}
-
-.download:hover{
-    background: var(--secondary-color);
-    color: var(--third-color);
-    border-color: var(--third-color);
-    border-width: 2px;
-}
-
-.download:active{
-    background: var(--secondary-color);
-    color: var(--third-color);
-    transform: scale(0.95);
-}
-
-
 
 /*Experience Section*/
 
@@ -464,6 +437,10 @@ form {
       top: 25%;
       left: 0%;
       transform: translate(-50%, -50%);
+    }
+
+    .the-image{
+        max-width: 25rem;
     }
 
     .buttons{
