@@ -191,7 +191,7 @@ nav a:hover{
     border: 1px solid black;
 }
 
-.photo-title h2{
+.photo-title h1{
     text-align: center;
     padding: 48px;
     color: var(--primary-color);
@@ -318,7 +318,7 @@ img{
 }
 
 
-.contact-title h2{
+.contact-title h1{
     text-align: center;
     padding: 48px;
     padding-bottom: 10px;
