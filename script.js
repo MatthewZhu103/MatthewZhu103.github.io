@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.getElementById("hireButton").addEventListener("click", function(event) {
     event.preventDefault();
-    scrollToElement('.contact-title');
+    scrollToElement('.hook');
 });
 
 document.getElementById("link").addEventListener("click", function(event) {
@@ -61,7 +61,7 @@ document.getElementById("link1").addEventListener("click", function(event) {
 
 document.getElementById("link2").addEventListener("click", function(event) {
     event.preventDefault();
-    scrollToElement('.project-container');
+    scrollToElement('.project-section');
 });
 
 document.getElementById("link3").addEventListener("click", function(event) {

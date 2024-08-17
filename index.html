@@ -90,23 +90,24 @@
 
     <div class="exp-container">
         <div class="photo-title"><h1>Experience</h1></div> 
+        
 
         <div class="project">
             <div class="left-section">
-                <img src = ./../assets/OTE_results.webp alt = "image of OTE-GAN results from the OTE-GAN github" class="research-image">
+                <img src = ./../assets/SDRC_Image.webp alt = "Image of me (blue shirt) and fellow Sun Devil Robotics Club leaders and members" class="research-image">
 
                 <div class="text-format">
-                    <h3 class="proj-title">ML-Based Retinal Image Enhancement with OTE-GAN</h3>
-                    <p class="paragraph">During the summer, I worked with Dr. Wang in researching retinal image enhancement from current models with GAN (Generative Adversarial Networks) based image-to-image translation to better preserve artifacts and improve image quality. I helped to refactor some of the code to work with EyeQ (an image quality classifier) to read data from a csv file.</p>
+                    <h3 class="proj-title">Sun Devil Robotics Club (SDRC) - Mars Rover</h3>
+                    <p class="paragraph">To help the SDRC compete in the University Rover Challenge, I assisted in developing the firmware for the wheel motors to control the rover based on the motor’s data sheet using a power supply and motor software on Ubuntu. Additionally, I soldered connections between the motors and the motor drivers, providing critical electrical connections.</p>
                 </div>
             </div>
         </div>
-        
+
         <div class="project">
             <div class="right-section">
             
                 <div class="text-format">
-                    <h3 class="proj-title">DORA CubeSat</h3>
+                    <h3 class="proj-title">Interplanetary Lab Initiative - DORA CubeSat</h3>
                     <p class="paragraph">While working as an electrical volunteer for the Interplanetary Lab Initiative, I assessed an electronic power system's performance by conducting battery capacity tests, which led to identifying discharge rate issues and fixing faulty over and undervoltage protections. Additionally, I collaborated with a mentor to integrate CubeSat systems on ground station equipment to supply critical flight data and satellite functionality. My role involved meticulous documentation, progress updates, and writing testing procedures, ensuring clear communication and effective data transfer. 
                     </p>
                 </div>
@@ -117,11 +118,11 @@
 
         <div class="project">
             <div class="left-section">
-                <img src = ./../assets/SDRC_Image.webp alt = "Image of me (blue shirt) and fellow Sun Devil Robotics Club leaders and members" class="research-image">
+                <img src = ./../assets/OTE_results.webp alt = "image of OTE-GAN results from the OTE-GAN github" class="research-image">
 
                 <div class="text-format">
-                    <h3 class="proj-title">Sun Devil Robotics Club (SDRC) - Mars Rover</h3>
-                    <p class="paragraph">To help the SDRC compete in the University Rover Challenge, I assisted in developing the firmware for the wheel motors to control the rover based on the motor’s data sheet using a power supply and motor software on Ubuntu. Additionally, I soldered connections between the motors and the motor drivers, providing critical electrical connections.</p>
+                    <h3 class="proj-title">ML-Based Retinal Image Enhancement w/OTE-GAN</h3>
+                    <p class="paragraph">During the summer, I worked with Dr. Wang in researching retinal image enhancement from current models with GAN (Generative Adversarial Networks) based image-to-image translation to better preserve artifacts and improve image quality. I helped to refactor some of the code to work with EyeQ (an image quality classifier) to read data from a csv file.</p>
                 </div>
             </div>
         </div>
@@ -154,29 +155,30 @@
             
         <div class="flex-grid-thirds">
             <div class="col">
-                <h4 class="proj-title">IN PROGRESS</h4>
-                <img src = ./../assets/opencv_image.webp alt = "Image of a demo object classifier show it's capabilities, which will be improved by my own model" class="research-image">
-                <h5 class="proj-title">Object Classifier with OpenCV</h5>
-                <p class="text-format">Using OpenCV, a Raspberry Pi, and a RaspPi camera, I want to make a basic object classifier that can recognize objects shown in front of the camera. This project will improve my skills in using OpenCV, scikit-learn, and TensorFlow libraries as well as learning how to effectively data-mine and train models on quality, carefully selected image data.</p>
+                <div class="dog-image-container">
+                    <img src = ./../assets/Liz.webp alt = "Image of Liz, a German Shepard, used as one of the training images in the CNN sequential model" class="dog-image">
+                    <img src = ./../assets/Todo.webp alt = "Image of Todo, a German Shepard and Labrador mix, also used as one of the training images in the model" class="dog-image">
+                </div>
+                <h5 class="proj-title">Binary CNN Pet Classifier</h5>
+                <p class="text-format">This summer (2024) was the peak of my interest in machine learning, specifically using deep learning for image processing (thank you Dr. Wang). I wanted to make my own and decided to make a binary image classifier to recognize my two dogs, Todo and Liz, given an image of one of them. I took 205 images of both of them as data to train, test, and develop the model using Jupyter Notebooks to achieve 86% accuracy</p>
             </div>
             <div class="col">
-                <h4 class="proj-title">UPCOMING</h4>
-                <img src = ./../assets/clap_concept.webp alt = "Concept of how the LED light strip will activate except adding Bluetooth on top to control the LED strp" class="research-image">
-                <h5 class="proj-title">Clap-on Lights w/Clap Recognition</h5>
-                <p class="text-format">Implementing an Arduino-powered LED system that responds only to claps can be challenging due to interference from other loud noises like fireworks (college students doing college student things), the house settling, and random bangs from me or my neighbors. To solve this, I plan to use an audio classifier to accurately recognize claps and ignore other sounds, ensuring the lights turn on only when I clap.</p>
+                <img src = ./../assets/circuitsI_Final_Project.webp alt = "Concept of how the LED light strip will activate except adding Bluetooth on top to control the LED strp" class="research-image">
+                <h5 class="proj-title">Circuits I Final Project: Solar Power Meter</h5>
+                <p class="text-format">The final project of my Circuits 1 class was to design a solar panel power meter using concepts learned throughout the semester. I utilized op-amps, Arduino coding, and voltage division circuitry to obtain readings and do calcuations within the code to get an accurate reading from the solar panel</p>
             </div>
         </div>
 
         <div class="flex-grid-thirds">
             <div class="col">
                 <img src = ./../assets/DHT11_project.webp alt = "Image of the DHT11 and LCD electronics on a breadboard" class="research-image">
-                <h5 class="proj-title">DHT11 & LCD Bare-Metal Drivers</h5>
-                <p class="text-format">As a learning experience, I developed a bare-metal, binary-level DHT11 and LCD driver on an ARM Cortex STM32 without using any existing libraries. I utilized a logic analyzer and component datasheets to decode the communication protocols and debug firmware issues to display temperature readings on the LCD from real-time, decoded DHT11 data.</p>
+                <h5 class="proj-title">DHT11 & LCD Partial Bare-Metal Drivers</h5>
+                <p class="text-format">As a learning experience, I developed a partial bare-metal, binary-level DHT11 and LCD driver on an ARM Cortex STM32 without using any existing libraries. I utilized a logic analyzer and component datasheets to decode the communication protocols and debug firmware issues to display temperature readings on the LCD from real-time, decoded DHT11 data.</p>
             </div>
             <div class="col">
                 <img src = ./../assets/PCB_Image.webp alt = "Image of the dog feeder PCB in KiCAD" class="proj-image">
                 <h5 class="proj-title">Automatic Dog Feeder PCB</h5>
-                <p class="text-format">I forget to feed my dog sometimes from the amount of homework and studying I have. To remedy this, I designed a dog feeder based on an Arduino Uno by writing firmware for components and making a PCB using KiCAD, which was fabricated by JLCPCB. The dog feeder features an LCD with a menu for programming feeding times, a low-food level sensor, and is remote controllable.</p>
+                <p class="text-format">I forget to feed my dog sometimes from the amount of homework and studying I have. To remedy this, I designed a dog feeder based on an Arduino Nano by writing firmware for components and making a PCB using KiCAD, which was fabricated by JLCPCB. The dog feeder features an LCD with a menu for programming feeding times, a low-food level sensor, and is remote controllable.</p>
             </div>
         </div>
     </div>   
@@ -195,7 +197,7 @@
             <img src = ./../assets/aboutme.webp alt = "Picture of myself and my dog Todo" class="self-image">
 
             <div class="text-format">
-                <p class="paragraph">I’m Matt, a junior student in computer systems engineering at Arizona State University, and have made the Dean’s list for every semester with a 4.0 GPA. I particularly enjoy working with firmware, embedded systems hardware, and machine learning projects. Outside of academia, I enjoy walking and playing with my dog Todo, playing Rainbow Six Siege, pen-spinning, and eating anything I’m not supposed to on diet. </p>
+                <p class="paragraph">I’m Matt, a second-year junior student in computer systems engineering at Arizona State University (ahead 1 semester), and have made the Dean’s list for every semester with a 4.0 GPA. I particularly enjoy working with firmware, embedded systems hardware, and machine learning projects. Outside of academia, I enjoy walking and playing with my dogs Todo (pictured) and Liz, playing Rainbow Six Siege  and Minecraft, pen-spinning, and eating anything I’m not supposed to on diet. </p>
             </div>
         </div>
 
