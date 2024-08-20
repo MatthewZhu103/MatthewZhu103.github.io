@@ -31,16 +31,16 @@ function scrollToElement(elementSelector, instance = 0) {
 
 const heroText = document.querySelector('.hero-text');
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      heroText.classList.add('visible');
-      observer.unobserve(entry.target); 
-    }
-  });
-});
-
 if (heroText) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        heroText.classList.add('visible');
+        observer.unobserve(entry.target); 
+      }
+    });
+  });
+
   observer.observe(heroText);
 }
 
