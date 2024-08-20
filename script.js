@@ -30,7 +30,6 @@ function scrollToElement(elementSelector, instance = 0) {
 }
 
 const heroText = document.querySelector('.hero-text');
-const specificImage = document.querySelector('img.the-image'); 
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -41,12 +40,8 @@ const observer = new IntersectionObserver(entries => {
   });
 });
 
-if (specificImage) {
-  specificImage.addEventListener('load', () => {
-    if (heroText) {
-      observer.observe(heroText);
-    }
-  });
+if (heroText) {
+  observer.observe(heroText);
 }
 
 document.getElementById("hireButton").addEventListener("click", function(event) {
