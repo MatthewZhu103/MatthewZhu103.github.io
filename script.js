@@ -29,31 +29,18 @@ function scrollToElement(elementSelector, instance = 0) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const heroText = document.querySelector('.hero-text');
-  
-    const checkVisibility = () => {
-      const rect = heroText.getBoundingClientRect();
-      if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-        heroText.classList.add('visible');
-        return true;
-      }
-      return false;
-    };
-  
-    if (!checkVisibility()) { 
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            heroText.classList.add('visible');
-            observer.unobserve(entry.target); 
-          }
-        });
-      });
-  
-      observer.observe(heroText);
+const heroText = document.querySelector('.hero-text');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      heroText.classList.add('visible');
+      observer.unobserve(entry.target); 
     }
   });
+});
+
+observer.observe(heroText);
 
 document.getElementById("hireButton").addEventListener("click", function(event) {
     event.preventDefault();
